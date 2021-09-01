@@ -1,0 +1,26 @@
+[
+    {
+        "marca": "AMD",
+        "producto": "Athom",
+        "precio": 8000,
+        "stock": 66
+    },
+    {
+        "marca": "AMD",
+        "producto": "ryzen3",
+        "precio": 12000,
+        "stock": 30
+    },
+    {
+        "marca": "AMD",
+        "producto": "ryzen5",
+        "precio": 22000,
+        "stock": 40
+    },
+    {
+        "marca": "AMD",
+        "producto": "ryzen7",
+        "precio": 32000,
+        "stock": 40
+    }
+]

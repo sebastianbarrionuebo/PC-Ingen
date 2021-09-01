@@ -1,0 +1,313 @@
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Header*/
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #212529; }
+  #mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-weight: 700; }
+  #mainNav .navbar-brand {
+    color: #ffc800;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase; }
+    #mainNav .navbar-brand img {
+      height: 1.5rem; }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.95rem;
+    letter-spacing: 0.0625em; }
+  #mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #ffc800; }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #ffc800; }
+  #mainNav .nav-item-comon {
+    color: white; }
+  #mainNav .nav-item-contact {
+    color: #f3f315; }
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffc800;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
+
+.menu .menu__item:hover ul {
+  display: block;
+  position: absolute; }
+
+.menu .dropdown-menu {
+  background-color: #d3d2d2; }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between; }
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap; }
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0; }
+  .navbar-nav .dropdown-menu {
+    position: static; }
+
+.navbar-text {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center; }
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out; }
+
+/*body*/
+.masthead {
+  padding-top: 6.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: white;
+  background-image: url("../img/PCfondo2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
+  .masthead .masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  .masthead .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+@media (min-width: 768px) {
+  .masthead {
+    padding-top: 12rem;
+    padding-bottom: 12.5rem; }
+    .masthead .masthead-subheading {
+      font-size: 2.25rem;
+      font-style: italic;
+      line-height: 2.25rem;
+      margin-bottom: 2rem; }
+    .masthead .masthead .masthead-heading {
+      font-size: 4.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-bottom: 4rem; } }
+
+/*Inicio de secion*/
+.formInicio {
+  width: 600px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em; }
+  .formInicio .formInicio--formato {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+
+.button--color {
+  background-color: #2c1788;
+  border-color: #2c1788; }
+
+.button--color:hover {
+  background-color: #4927e2;
+  border-color: #4927e2; }
+
+@media (max-width: 768px) {
+  .formInicio {
+    width: 400px;
+    height: 100px; } }
+
+/*Armado de PC*/
+.contenedor--recuadro {
+  background-color: black;
+  color: white; }
+  .contenedor--recuadro .seguimiento {
+    background-color: #2c2c2c; }
+    .contenedor--recuadro .seguimiento ul {
+      list-style: none; }
+      .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador {
+        padding: 13px; }
+        .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador img {
+          padding-top: 12px; }
+        .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado {
+          text-align: left; }
+          .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado input {
+            background-color: #c0b4b4;
+            border-radius: 5px;
+            width: 200px;
+            height: 35px;
+            font-family: Arial, Helvetica, sans-serif; }
+          .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado input:hover {
+            background-color: #e2d3d3;
+            border-color: #e2d3d3; }
+  .contenedor--recuadro .selecion--fondo {
+    background-color: #58565a; }
+
+.articulo--contenedor {
+  border: black 2px solid;
+  border-radius: 5px;
+  margin: 3px;
+  padding-bottom: 1em;
+  background-color: #a5a4a8;
+  color: black;
+  font-size: 22px; }
+  .articulo--contenedor .articulo--img__espaciado {
+    padding: 3em; }
+    .articulo--contenedor .articulo--img__espaciado img {
+      width: 100%;
+      height: auto;
+      margin: auto; }
+  .articulo--contenedor .articulo--comentario .siStock {
+    color: green;
+    font-weight: bold; }
+  .articulo--contenedor .articulo--comentario .noStock {
+    color: red;
+    font-weight: bold; }
+  .articulo--contenedor input {
+    background-color: #c0b4b4;
+    border-radius: 5px; }
+  .articulo--contenedor input:hover {
+    background-color: #e2d3d3;
+    border-color: #e2d3d3; }
+
+.articulo--total__estilo {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: black;
+  font-size: 2em; }
+
+#procesadoresSeleccion {
+  padding-top: 14em; }
+  #procesadoresSeleccion .procesadores--contenedor__padding {
+    padding: 1em; }
+    #procesadoresSeleccion .procesadores--contenedor__padding .procesadorAMD {
+      background: linear-gradient(to top, red, #581515);
+      padding-top: 2em;
+      padding-bottom: 2em;
+      padding-left: 12em;
+      padding-right: 12em;
+      border-radius: 1em;
+      border: 1px solid black; }
+    #procesadoresSeleccion .procesadores--contenedor__padding .procesadorIntel {
+      background: linear-gradient(to top, blue, #0d0d46);
+      padding-top: 2em;
+      padding-bottom: 2em;
+      padding-left: 12em;
+      padding-right: 12em;
+      border-radius: 1em;
+      border: 1px solid black; }
+
+/*Seccion de Contacto*/
+.form-control {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+
+.form-group {
+  padding: 1em; }
+  .form-group input {
+    padding: 1.25rem; }
+  .form-group textarea {
+    padding: 1.25rem; }
+
+.submitButton-container {
+  padding-top: 3em; }
+  .submitButton-container .submitButton {
+    width: 18em;
+    height: 3em; }
+
+/*Pie de pagina*/
+.pie__Contenedor {
+  background-color: #272c35;
+  color: white;
+  padding-bottom: 50px; }
+
+.pie__Contenedor--copyrigt {
+  background-color: #323741; }
+
+#map {
+  height: 200px;
+  width: 100%; }
+
+.footer--top__espaciado {
+  padding-top: 22px;
+  padding-bottom: 22px; }
