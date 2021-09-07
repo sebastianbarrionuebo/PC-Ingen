@@ -40,7 +40,7 @@ function seleccionProcesador() {
 }
 function seleccionAMD() {
     $("#muestra2").empty();
-    $("#muestra2").append(`<div id="seleccionAMD">
+    $("#muestra2").append(`<div style="display: none" id="seleccionAMD">
                             <div class="row"><!-- Fila 1-->
                                 <div class="col-4">
                                     <div class="articulo--contenedor">
@@ -104,11 +104,12 @@ function seleccionAMD() {
                                 </div>
                             </div>
                         </div>`);
+    $("#seleccionAMD").fadeIn(1000);
     traerDatos("../DataBase/procesadoresAMD.json");
 }
 function seleccionIntel() {
     $("#muestra2").empty();
-    $("#muestra2").append(`<div id="seleccionIntel">
+    $("#muestra2").append(`<div style="display: none" id="seleccionIntel">
                             <div class="row"><!-- Fila 1-->
                                 <div class="col-4">
                                     <div class="articulo--contenedor">
@@ -192,6 +193,7 @@ function seleccionIntel() {
                                 </div>
                             </div>
                         </div>`);
+    $("#seleccionIntel").fadeIn(1000);
     traerDatos("../DataBase/procesadoresIntel.json");
 }
 
@@ -200,7 +202,7 @@ function seleccionIntel() {
 
 function seleccionMother(producto, marca, precio) {
     $("#muestra2").empty();
-    $("#muestra2").append(`<div id="seleccionMother">
+    $("#muestra2").append(`<div style="display: none" id="seleccionMother">
                             <div class="row"><!-- Fila 1-->
                                 <div class="col-4">
                                     <div class="articulo--contenedor">
@@ -561,6 +563,7 @@ function seleccionMother(producto, marca, precio) {
                                 </div>
                             </div>
                         </div>`);
+    $("#seleccionMother").fadeIn(1000);
     if  ((producto != procesador_producto) && (producto != undefined) && (procesador_producto != "No seleccionado")) {
         precioFinal = precioFinal - procesador_precio;
     }
@@ -580,7 +583,7 @@ function seleccionMother(producto, marca, precio) {
 
 function seleccionRAM(producto, marca, precio) {
     $("#muestra2").empty();
-    $("#muestra2").append(`<div id="SeleccionRAM">
+    $("#muestra2").append(`<div style="display: none" id="SeleccionRAM">
                             <div class="row"><!-- Fila 1-->
                                 <div class="col-4">
                                     <div class="articulo--contenedor">
@@ -972,6 +975,7 @@ function seleccionRAM(producto, marca, precio) {
                                 </div>
                             </div>
                         </div>`);
+    $("#SeleccionRAM").fadeIn(1000);
     if  ((producto != motherboard_producto) && (producto != undefined)) {
         precioFinal = precioFinal - motherboard_precio;
     }
@@ -991,7 +995,7 @@ function seleccionRAM(producto, marca, precio) {
 
 function seleccionDisco(producto, marca, precio) {
     $("#muestra2").empty();
-    $("#muestra2").append(`<div id="SeleccionDisco">
+    $("#muestra2").append(`<div style="display: none" id="SeleccionDisco">
                             <div class="row"><!-- Fila 1-->
                                 <div class="col-4">
                                     <div class="articulo--contenedor">
@@ -1198,6 +1202,7 @@ function seleccionDisco(producto, marca, precio) {
                                 </div>
                             </div>
                         </div>`);
+    $("#SeleccionDisco").fadeIn(1000);
     if  ((producto != RAM_producto) && (producto != undefined)) {
         precioFinal = precioFinal - RAM_precio;
     }
@@ -1217,7 +1222,7 @@ function seleccionDisco(producto, marca, precio) {
 
 function seleccionGrafica(producto, marca, precio) {
     $("#muestra2").empty();
-    $("#muestra2").append(`<div id="seleccionGrafica">
+    $("#muestra2").append(`<div style="display: none" id="seleccionGrafica">
                             <div class="row"><!-- Fila 1-->
                                 <div class="col-4">
                                     <div class="articulo--contenedor">
@@ -1455,6 +1460,7 @@ function seleccionGrafica(producto, marca, precio) {
                                 </div>
                             </div>
                         </div>`);
+    $("#seleccionGrafica").fadeIn(1000);
     if  ((producto != disco_producto) && (producto != undefined)) {
         precioFinal = precioFinal - disco_precio;
     }
@@ -1474,7 +1480,7 @@ function seleccionGrafica(producto, marca, precio) {
 
 function seleccionFuente(producto, marca, precio) {
     $("#muestra2").empty();
-    $("#muestra2").append(`<div id="seleccionFuente">
+    $("#muestra2").append(`<div style="display: none" id="seleccionFuente">
                             <div class="row"><!-- Fila 1-->
                                 <div class="col-4">
                                     <div class="articulo--contenedor">
@@ -1661,6 +1667,7 @@ function seleccionFuente(producto, marca, precio) {
                                 </div>
                             </div>
                         </div>`);
+    $("#seleccionFuente").fadeIn(1000);
     if  ((producto != grafica_producto) && (producto != undefined)) {
         precioFinal = precioFinal - grafica_precio;
     }
@@ -1680,7 +1687,7 @@ function seleccionFuente(producto, marca, precio) {
 
 function seleccionCooler(producto, marca, precio) {
     $("#muestra2").empty();
-    $("#muestra2").append(`<div id="seleccionCooler">
+    $("#muestra2").append(`<div style="display: none" id="seleccionCooler">
                             <div class="row"><!-- Fila 1-->
                                 <div class="col-4">
                                     <div class="articulo--contenedor">
@@ -1867,6 +1874,7 @@ function seleccionCooler(producto, marca, precio) {
                                 </div>
                             </div>
                         </div>`);
+    $("#seleccionCooler").fadeIn(1000);
     if  ((producto != fuente_producto) && (producto != undefined)) {
         precioFinal = precioFinal - fuente_precio;
     }
@@ -1886,7 +1894,7 @@ function seleccionCooler(producto, marca, precio) {
 
 function seleccionGabinete(producto, marca, precio) {
     $("#muestra2").empty();
-    $("#muestra2").append(`<div id="seleccionGabinete" >
+    $("#muestra2").append(`<div style="display: none" id="seleccionGabinete" >
                             <div class="row"><!-- Fila 1-->
                                 <div class="col-4">
                                     <div class="articulo--contenedor">
@@ -2134,6 +2142,7 @@ function seleccionGabinete(producto, marca, precio) {
                                 </div>
                             </div>
                         </div>`);
+    $("#seleccionGabinete").fadeIn(1000);
     if  ((producto != cooler_producto) && (producto != undefined)) {
         precioFinal = precioFinal - cooler_precio;
     }
@@ -2164,134 +2173,135 @@ function seleccionFinal(producto, marca, precio) {
     }
     precioFinal = (procesador_precio + motherboard_precio + RAM_precio + disco_precio + grafica_precio + fuente_precio + cooler_precio + gabinete_precio);
     $("#muestra2").empty();
-    $("#muestra2").append(`<div class="row">
+    $("#muestra2").append(`<div style="display: none" id="carritoMuestra">
                             <div class="row"><!-- Fila 1-->
-                            <div class="col-4">
-                                <div class="articulo--contenedor">
-                                    <div class="articulo--img__espaciado">
-                                        <img class="img-fluid" src="../img/${procesador_producto}.png" alt="">
+                                <div class="col-4">
+                                    <div class="articulo--contenedor">
+                                        <div class="articulo--img__espaciado">
+                                            <img class="img-fluid" src="../img/${procesador_producto}.png" alt="">
+                                        </div>
+                                        <div class="articulo--comentario">
+                                            <div id="articuloProcesador">
+                                                <p>Marca: ${procesador_marca}</p>
+                                                <p>Producto: ${procesador_producto}</p>
+                                                <p>Precio: ${procesador_precio}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="articulo--comentario">
-                                        <div id="articuloProcesador">
-                                            <p>Marca: ${procesador_marca}</p>
-                                            <p>Producto: ${procesador_producto}</p>
-                                            <p>Precio: ${procesador_precio}</p>
+                                </div>
+                                <div class="col-4">
+                                    <div class="articulo--contenedor">
+                                        <div class="articulo--img__espaciado">
+                                            <img class="img-fluid" src="../img/${motherboard_marca}.png" alt="">
+                                        </div>
+                                        <div class="articulo--comentario">
+                                            <div id="articuloMotherboard">
+                                                <p>Marca: ${motherboard_marca}</p>
+                                                <p>Producto: ${motherboard_producto}</p>
+                                                <p>Precio: ${motherboard_precio}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="articulo--contenedor">
+                                        <div class="articulo--img__espaciado">
+                                            <img class="img-fluid" src="../img/${RAM_marca}.png" alt="">
+                                        </div>
+                                        <div class="articulo--comentario">
+                                            <div id="articuloRAM">
+                                                <p>Marca: ${RAM_marca}</p>
+                                                <p>Producto: ${RAM_producto}</p>
+                                                <p>Precio: ${RAM_precio}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="articulo--contenedor">
-                                    <div class="articulo--img__espaciado">
-                                        <img class="img-fluid" src="../img/${motherboard_marca}.png" alt="">
+                            <div class="row"><!-- Fila 2-->
+                                <div class="col-4">
+                                    <div class="articulo--contenedor">
+                                        <div class="articulo--img__espaciado">
+                                            <img class="img-fluid" src="../img/${disco_marca}.png" alt="">
+                                        </div>
+                                        <div class="articulo--comentario">
+                                            <div id="articuloDisco">
+                                                <p>Marca: ${disco_marca}</p>
+                                                <p>Producto: ${disco_producto}</p>
+                                                <p>Precio: ${disco_precio}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="articulo--comentario">
-                                        <div id="articuloMotherboard">
-                                            <p>Marca: ${motherboard_marca}</p>
-                                            <p>Producto: ${motherboard_producto}</p>
-                                            <p>Precio: ${motherboard_precio}</p>
+                                </div>
+                                <div class="col-4">
+                                    <div class="articulo--contenedor">
+                                        <div class="articulo--img__espaciado">
+                                            <img class="img-fluid" src="../img/${grafica_marca}.png" alt="">
+                                        </div>
+                                        <div class="articulo--comentario">
+                                            <div id="articuloGrafica">
+                                                <p>Marca: ${grafica_marca}</p>
+                                                <p>Producto: ${grafica_producto}</p>
+                                                <p>Precio: ${grafica_precio}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="articulo--contenedor">
+                                        <div class="articulo--img__espaciado">
+                                            <img class="img-fluid" src="../img/${fuente_marca}.png" alt="">
+                                        </div>
+                                        <div class="articulo--comentario">
+                                            <div id="articuloFuente">
+                                                <p>Marca: ${fuente_marca}</p>
+                                                <p>Producto: ${fuente_producto}</p>
+                                                <p>Precio: ${fuente_precio}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="articulo--contenedor">
-                                    <div class="articulo--img__espaciado">
-                                        <img class="img-fluid" src="../img/${RAM_marca}.png" alt="">
-                                    </div>
-                                    <div class="articulo--comentario">
-                                        <div id="articuloRAM">
-                                            <p>Marca: ${RAM_marca}</p>
-                                            <p>Producto: ${RAM_producto}</p>
-                                            <p>Precio: ${RAM_precio}</p>
+                            <div class="row"><!-- Fila 3-->
+                                <div class="col-4">
+                                    <div class="articulo--contenedor">
+                                        <div class="articulo--img__espaciado">
+                                            <img class="img-fluid" src="../img/${cooler_marca}.png" alt="">
+                                        </div>
+                                        <div class="articulo--comentario">
+                                            <div id="articuloCooler">
+                                                <p>Marca: ${cooler_marca}</p>
+                                                <p>Producto: ${cooler_producto}</p>
+                                                <p>Precio: ${cooler_precio}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row"><!-- Fila 2-->
-                            <div class="col-4">
-                                <div class="articulo--contenedor">
-                                    <div class="articulo--img__espaciado">
-                                        <img class="img-fluid" src="../img/${disco_marca}.png" alt="">
-                                    </div>
-                                    <div class="articulo--comentario">
-                                        <div id="articuloDisco">
-                                            <p>Marca: ${disco_marca}</p>
-                                            <p>Producto: ${disco_producto}</p>
-                                            <p>Precio: ${disco_precio}</p>
+                                <div class="col-4">
+                                    <div class="articulo--contenedor">
+                                        <div class="articulo--img__espaciado">
+                                            <img class="img-fluid" src="../img/${gabinete_marca}.png" alt="">
+                                        </div>
+                                        <div class="articulo--comentario">
+                                            <div id="articuloGabinete">
+                                                <p>Marca: ${gabinete_marca}</p>
+                                                <p>Producto: ${gabinete_producto}</p>
+                                                <p>Precio: ${gabinete_precio}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="articulo--contenedor">
-                                    <div class="articulo--img__espaciado">
-                                        <img class="img-fluid" src="../img/${grafica_marca}.png" alt="">
-                                    </div>
-                                    <div class="articulo--comentario">
-                                        <div id="articuloGrafica">
-                                            <p>Marca: ${grafica_marca}</p>
-                                            <p>Producto: ${grafica_producto}</p>
-                                            <p>Precio: ${grafica_precio}</p>
-                                        </div>
-                                    </div>
+                                <div class="col-4">
+                                    
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="articulo--contenedor">
-                                    <div class="articulo--img__espaciado">
-                                        <img class="img-fluid" src="../img/${fuente_marca}.png" alt="">
-                                    </div>
-                                    <div class="articulo--comentario">
-                                        <div id="articuloFuente">
-                                            <p>Marca: ${fuente_marca}</p>
-                                            <p>Producto: ${fuente_producto}</p>
-                                            <p>Precio: ${fuente_precio}</p>
-                                        </div>
-                                    </div>
+                            <div class="row "><!-- Fila 4-->
+                                <div class="articulo--total__estilo">
+                                    <p>Tolal: (${precioFinal})</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row"><!-- Fila 3-->
-                            <div class="col-4">
-                                <div class="articulo--contenedor">
-                                    <div class="articulo--img__espaciado">
-                                        <img class="img-fluid" src="../img/${cooler_marca}.png" alt="">
-                                    </div>
-                                    <div class="articulo--comentario">
-                                        <div id="articuloCooler">
-                                            <p>Marca: ${cooler_marca}</p>
-                                            <p>Producto: ${cooler_producto}</p>
-                                            <p>Precio: ${cooler_precio}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="articulo--contenedor">
-                                    <div class="articulo--img__espaciado">
-                                        <img class="img-fluid" src="../img/${gabinete_marca}.png" alt="">
-                                    </div>
-                                    <div class="articulo--comentario">
-                                        <div id="articuloGabinete">
-                                            <p>Marca: ${gabinete_marca}</p>
-                                            <p>Producto: ${gabinete_producto}</p>
-                                            <p>Precio: ${gabinete_precio}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                
-                            </div>
-                        </div>
-                        <div class="row "><!-- Fila 4-->
-                            <div class="articulo--total__estilo">
-                                <p>Tolal: (${precioFinal})</p>
-                            </div>
-                        </div>
-                    </div>`);
+                        </div>`);
+    $("#carritoMuestra").fadeIn(1000);
     $("#carrito").val(precioFinal);
 }
 
