@@ -204,7 +204,7 @@
           .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado input {
             background-color: #c0b4b4;
             border-radius: 5px;
-            width: 200px;
+            width: 180px;
             height: 35px;
             font-family: Arial, Helvetica, sans-serif; }
           .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado input:hover {
@@ -222,7 +222,9 @@
   color: black;
   font-size: 22px; }
   .articulo--contenedor .articulo--img__espaciado {
-    padding: 3em; }
+    padding-top: 2em;
+    padding-right: 3em;
+    padding-left: 3em; }
     .articulo--contenedor .articulo--img__espaciado img {
       width: 100%;
       height: auto;
@@ -273,6 +275,32 @@
     #procesadoresSeleccion .procesadores--contenedor__padding .procesadorIntel:hover {
       background: linear-gradient(to top, #0f0fff, #161677);
       border-color: blue; }
+
+@media (max-width: 425px) {
+  .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado {
+    padding-top: 10px; }
+    .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado input {
+      width: 100px; }
+    .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado p {
+      display: none; }
+  #procesadoresSeleccion .procesadores--contenedor__padding .procesadorAMD {
+    padding-left: 5em;
+    padding-right: 5em; }
+  #procesadoresSeleccion .procesadores--contenedor__padding .procesadorIntel {
+    padding-left: 5em;
+    padding-right: 5em; } }
+
+@media (max-width: 768px) {
+  .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado {
+    text-align: center; }
+    .contenedor--recuadro .seguimiento ul .seguimiento--articulos__ceparador .seguimiento--articulos__alineado input {
+      width: 115px; }
+  .articulo--contenedor {
+    font-size: 22px; }
+    .articulo--contenedor .articulo--img__espaciado {
+      padding-top: 1em;
+      padding-right: 1em;
+      padding-left: 1em; } }
 
 /*Seccion de Contacto*/
 .form-control {
