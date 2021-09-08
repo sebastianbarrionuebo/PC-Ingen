@@ -4,7 +4,7 @@ if (nombreUsuario !== null) { //mientras haya usuario guardado en el local stora
     iniciarSecion();
 }else{
     $("#muestraComenzar").empty();
-    $("#muestraComenzar").append(`<form>
+    $("#muestraComenzar").append(`<form style="display: none" id="formRegistro">
                                     <div class="container-fluid">
                                         <div class="row-fluid">
                                             <div class="row formInicio">
@@ -19,6 +19,7 @@ if (nombreUsuario !== null) { //mientras haya usuario guardado en el local stora
                                         </div>
                                     </div>
                                 </form>`);
+    $("#formRegistro").fadeIn(1000);
 }
 
 
