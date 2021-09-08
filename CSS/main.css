@@ -259,6 +259,9 @@
       padding-right: 12em;
       border-radius: 1em;
       border: 1px solid black; }
+    #procesadoresSeleccion .procesadores--contenedor__padding .procesadorAMD:hover {
+      background: linear-gradient(to top, #fd0909, #811f1f);
+      border-color: red; }
     #procesadoresSeleccion .procesadores--contenedor__padding .procesadorIntel {
       background: linear-gradient(to top, blue, #0d0d46);
       padding-top: 2em;
@@ -267,6 +270,9 @@
       padding-right: 12em;
       border-radius: 1em;
       border: 1px solid black; }
+    #procesadoresSeleccion .procesadores--contenedor__padding .procesadorIntel:hover {
+      background: linear-gradient(to top, #0f0fff, #161677);
+      border-color: blue; }
 
 /*Seccion de Contacto*/
 .form-control {

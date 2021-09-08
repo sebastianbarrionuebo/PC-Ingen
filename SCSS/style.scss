@@ -302,6 +302,10 @@
       border-radius: 1em;
       border: 1px solid black;
     }
+    .procesadorAMD:hover{
+      background: linear-gradient(to top,rgb(253, 9, 9), rgb(129, 31, 31));
+      border-color: red;
+    }
     .procesadorIntel{
       background: linear-gradient(to top,blue, rgb(13, 13, 70));
       padding-top: 2em;
@@ -310,6 +314,10 @@
       padding-right: 12em;
       border-radius: 1em;
       border: 1px solid black;
+    }
+    .procesadorIntel:hover{
+      background: linear-gradient(to top,rgb(15, 15, 255), rgb(22, 22, 119));
+      border-color: blue;
     }
   }
 }
