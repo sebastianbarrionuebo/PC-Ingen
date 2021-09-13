@@ -2325,4 +2325,3 @@ function seleccionFinal(producto, marca, precio) {
         $("#carrito").val(precioFinal);
     });
 }
-
